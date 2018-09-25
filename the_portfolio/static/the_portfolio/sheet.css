@@ -1,0 +1,27 @@
+body{
+	background-color: orange;
+	/* delete this latter  */
+	color: black;
+}
+
+
+#about-me{
+	min-height: 90vh;
+	padding: 5vh;
+	background-color: #ee2;
+}
+
+#projects{
+	min-height: 100vh;
+	padding: 5vh;
+	background-color: #333;
+}
+#education{
+	min-height: 100vh;
+	padding: 5vh;
+	background-color: #23e;
+}
+.certifcate{
+	background-color: #123;
+	padding: 10px;
+}

@@ -1,0 +1,30 @@
+# for personal readons :)
+.my_portfolio/settings/development.py
+.env 
+db.sqlite3
+
+
+build/*
+dist/*
+tools/__dummy__/*
+*.egg
+*.egg-info*
+*.gz
+*.zip
+
+# Temporary or cache files & folders created by Python (e.g. __pycache__
+# folders) or our internal development tools.
+.cache/*
+.eggs/*
+.tox/*
+
+# Precompiled Python modules outside a __pycache__ folder.
+*.pyc
+*.pyo
+
+# Backup files.
+*.bak
+
+# Editor specific
+.idea/*
+*.iml
