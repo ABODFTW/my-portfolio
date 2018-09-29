@@ -9,11 +9,11 @@
                 <img alt="placeholder+image" src="http://dummyimage.com/500x500/4d494d/686a82.gif&text=placeholder+image">
                 </img>
             </div>
+            {% for object in objects %}
             <div class="col">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos aut sapiente illum voluptas omnis, totam, deleniti libero? Perspiciatis, reiciendis dolorum suscipit necessitatibus cupiditate repellat nobis modi, asperiores fuga animi vitae in, optio amet nostrum officia quibusdam incidunt sequi eaque error.
-                </p>
+                <p>{{object}}</p>
             </div>
+            {% endfor %}
         </div>
     </div>
 </section>
