@@ -1,19 +1,22 @@
+{% load static %}
 {% include 'the_portfolio/base.html' %}
 
 
 {% block body %}
 <section id="about-me">
     <div class="container-fluid">
-        <h4>Who am I ?</h4>
         <div class="row">
-            <div class="col-auto">
-                <img alt="placeholder+image" src="http://dummyimage.com/200x200/4d494d/686a82.gif&text=placeholder+image">
-                </img>
+            <div class="col col-md-3 mx-auto d-block text-center">
+                <img alt="personal photo " class="img-fluid rounded-circle" src="{% static 'the_portfolio/personal.jpg' %}"></img>
+                <h4>ABOD</h4>
+                <small>Self Taught,Full Stack Web Developer</small>
             </div>
+        </div>
+        <div class="row">
             {% for object in objects %}
-            <div class="col">
-                <p>{{object}}</p>
-            </div>
+                <div class="col">
+                    <p>{{object}}</p>
+                </div>
             {% endfor %}
         </div>
     </div>
