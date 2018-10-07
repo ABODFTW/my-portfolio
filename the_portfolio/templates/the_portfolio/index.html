@@ -6,18 +6,11 @@
 <section id="about-me">
     <div class="container-fluid">
         <div class="row">
-            <div class="col col-md-3 mx-auto d-block text-center">
+            <div class="col col-md-4 mx-auto d-block text-center">
                 <img alt="personal photo " class="img-fluid rounded-circle" src="{% static 'the_portfolio/personal.jpg' %}"></img>
                 <h4>ABOD</h4>
-                <small>Self Taught,Full Stack Web Developer</small>
+                <strong><small>SELF TAUGHT , FULL STACK WEB DEVELOPER</small></strong>
             </div>
-        </div>
-        <div class="row">
-            {% for object in objects %}
-                <div class="col">
-                    <p>{{object}}</p>
-                </div>
-            {% endfor %}
         </div>
     </div>
 </section>

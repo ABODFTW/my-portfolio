@@ -3,6 +3,4 @@ from django.shortcuts import render , redirect
 
 
 def index(request):
-	objects = Object.objects.all()
-	context = {'objects' : objects}
-	return render(request, "the_portfolio/index.html" , context)
+	return render(request, "the_portfolio/index.html")
