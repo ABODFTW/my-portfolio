@@ -1,12 +1,15 @@
 {% extends 'the_portfolio/base.html' %}
+{% load crispy_forms_tags %}
 
 
 {% block body %}
-
-<form method="post">
-	{% csrf_token %}
-    {{ form.as_p }}
-    <input type="submit" value="Save">
-</form>
-
+<div class="row">
+   <div class="col-md-6 col-xl-3 mx-auto d-block bg-dark p-3">
+        <form method="post" class="form-control">
+            {% csrf_token %}
+            {{ form|crispy }}
+            <input class="btn btn-success btn-block" type="submit" value="add">
+        </form>
+    </div>
+</div>
 {% endblock %}

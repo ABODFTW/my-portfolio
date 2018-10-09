@@ -17,19 +17,22 @@
 <section id="projects">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-auto">
-                <div class="card c-black bg-light mb-3" style="max-width: 18rem;">
-                    <img alt="Card image cap" class="card-img-top p-2" src="http://dummyimage.com/900x500/4d494d/686a82.gif&text=project+one">
+          <div class="card-deck">
+           {% for project in projects %}
+<!--            <div class="col col-md-4 col-xl-3">-->
+                <div class="card c-black bg-light">
                         <div class="card-header">
-                            My First Proejct
+                        {{ project.project_name }}
                         </div>
                         <div class="card-body">
                             <p class="card-text">
-                                Project Description 
+                                {{ project.project_description }}
                             </p>
                         </div>
                     </img>
                 </div>
+<!--            </div>-->
+            {% endfor %}
             </div>
         </div>
     </div>
