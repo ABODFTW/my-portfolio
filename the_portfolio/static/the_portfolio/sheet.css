@@ -13,17 +13,17 @@ body{
 }
 
 #projects{
-	min-height: 100vh;
+	min-height: 91vh;
 	padding: 5vh;
 	background-color: #BB0A21;
 }
 #education{
-	min-height: 100vh;
+	min-height: 91vh;
 	padding: 5vh;
 	background-color: #28587B;
 }
 #contact-us{
-	min-height: 100vh;
+	min-height: 91vh;
 	padding: 5vh;
 	background-color: #BB0A21;
 }
