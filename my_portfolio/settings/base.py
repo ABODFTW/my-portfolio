@@ -16,7 +16,7 @@ SECRET_KEY = ''
 ALLOWED_HOSTS = [
 '0.0.0.0',
 '127.0.0.1',
-'abod-portfolio.herokuapp.com'
+'*'
 ]
 
 
