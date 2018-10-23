@@ -1,0 +1,34 @@
+body{
+	color:#D3D4D9
+}
+
+.c-black{
+	color:#252627;
+}
+
+#about-me{
+	min-height: 91vh;
+	padding: 5vh;
+	background-color: #28587B;
+}
+
+#projects{
+	min-height: 91vh;
+	padding: 5vh;
+	background-color: #BB0A21;
+}
+#education{
+	min-height: 91vh;
+	padding: 5vh;
+	background-color: #28587B;
+}
+#contact-us{
+	min-height: 91vh;
+	padding: 5vh;
+	background-color: #BB0A21;
+}
+.certifcate{
+	background-color: #D3D4D9;
+	color:#252627;
+	padding: 10px;
+}
