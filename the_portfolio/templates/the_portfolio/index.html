@@ -7,53 +7,26 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col col-md-4 mx-auto d-block text-center">
-                <img alt="personal photo " class="img-fluid rounded-circle" src="{% static 'the_portfolio/personal.jpg' %}"></img>
-                <h4>ABOD</h4>
-                <strong><small>SELF TAUGHT , FULL STACK WEB DEVELOPER</small></strong>
+                <img alt="personal photo " class="img-fluid rounded-circle" src="{% static 'the_portfolio/personal_4.jpg' %}"></img>
+                <h4>ABODXDGAMES</h4>
+                <strong><p>FULL STACK WEB DEVELOPER</p></strong>
             </div>
         </div>
     </div>
 </section>
 <section id="projects">
-    <div class="container-fluid">
-        <div class="row">
-          <div class="card-deck">
-           {% for project in projects %}
-<!--            <div class="col col-md-4 col-xl-3">-->
-                <div class="card c-black bg-light">
-                        <div class="card-header">
-                        {{ project.project_name }}
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text">
-                                {{ project.project_description }}
-                            </p>
-                        </div>
-                    </img>
-                </div>
-<!--            </div>-->
-            {% endfor %}
+    <h4>Projects</h4>
+    <small>Click on the card to go to the project repo.</small>
+    {% for project in projects %}
+    <a href="{{ project.repo_url }}">
+        <div class="card border-success mb-3" style="min-width:5em;max-width: 80%;margin:auto;">
+            <div class="card-body text-success">
+                <h5 class="card-title">{{ project.title }}</h5>
+                <p class="card-text">{{ project.description }}</p>
             </div>
         </div>
-    </div>
-</section>
-<section id="education">
-    <div class="container-fluid">
-        <h4 class="text-center">Digital-Certifcates</h4>
-        <div class="certifcate">
-            <div class="row">
-                <div class="col-auto">
-                    <img alt="Responsive image" class="img-fluid" src="https://via.placeholder.com/200x200">
-                    </img>
-                </div>
-                <div class="col">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia omnis ut sed pariatur, distinctio doloribus consectetur praesentium. Animi fugit, nihil enim recusandae excepturi libero adipisci dolore tempora quia, repudiandae aliquam molestiae ipsam saepe optio asperiores laborum officia assumenda, placeat id. Veniam eos ullam tempore facilis dolor quidem cupiditate modi aliquam?
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
+    </a>
+    {% endfor %}
 </section>
 
 <section id="contact-us">

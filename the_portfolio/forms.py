@@ -7,7 +7,7 @@ from .models import *
 class AddProjectForm(forms.ModelForm):
     class Meta:
         model = Project
-        fields = ['project_name' , 'project_description']
+        fields = ['title' , 'description' , 'repo_url']
         widgets = {
             'project_description' : forms.Textarea(attrs={'rows' : '3'})
         }

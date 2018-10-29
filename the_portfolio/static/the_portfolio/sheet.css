@@ -1,34 +1,27 @@
 body{
 	color:#D3D4D9
 }
-
+a:hover{
+	text-decoration: none;
+}
 .c-black{
 	color:#252627;
 }
 
 #about-me{
-	min-height: 91vh;
+	min-height: 94vh;
 	padding: 5vh;
-	background-color: #28587B;
+	background-color: #db384e;
 }
 
 #projects{
-	min-height: 91vh;
-	padding: 5vh;
-	background-color: #BB0A21;
-}
-#education{
-	min-height: 91vh;
+	min-height: 100vh;
 	padding: 5vh;
 	background-color: #28587B;
+	text-align: center;
 }
 #contact-us{
-	min-height: 91vh;
+	min-height: 100vh;
 	padding: 5vh;
-	background-color: #BB0A21;
-}
-.certifcate{
-	background-color: #D3D4D9;
-	color:#252627;
-	padding: 10px;
+	background-color: #db384e;
 }

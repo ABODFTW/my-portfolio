@@ -4,8 +4,8 @@ from django.db import models
 
 
 class Project(models.Model):
-	project_name = models.CharField(max_length=100)
-	project_description = models.TextField()
-
+	title = models.CharField(max_length=100)
+	description = models.TextField()
+	repo_url = models.URLField(default="https://github.com/abodftw")
 	def __str__(self):
-		return self.project_name
+		return self.title
