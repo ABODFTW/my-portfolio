@@ -14,20 +14,6 @@
         </div>
     </div>
 </section>
-<section id="projects">
-    <h4>Projects</h4>
-    <small>Click on the card to go to the project repo.</small>
-    {% for project in projects %}
-    <a href="{{ project.repo_url }}">
-        <div class="card border-success mb-3" style="min-width:5em;max-width: 80%;margin:auto;">
-            <div class="card-body text-success">
-                <h5 class="card-title">{{ project.title }}</h5>
-                <p class="card-text">{{ project.description }}</p>
-            </div>
-        </div>
-    </a>
-    {% endfor %}
-</section>
 
 <section id="contact-us">
     <div class="container-fluid">
