@@ -3,43 +3,39 @@
 
 
 {% block body %}
-<section id="about-me">
+<section id="home" style="background-image:url('{% static 'the_portfolio/main-bg.jpg' %}');background-size:cover;">
     <div class="container-fluid">
         <div class="row">
             <div class="col col-md-4 mx-auto d-block text-center">
-                <img alt="personal photo " class="img-fluid rounded-circle" src="{% static 'the_portfolio/personal_4.jpg' %}"></img>
-                <h4>ABODXDGAMES</h4>
-                <strong><p>FULL STACK WEB DEVELOPER</p></strong>
+                <img id="personal-photo" alt="personal photo" class="img-fluid rounded-circle" src="{% static 'the_portfolio/Abod.jpg' %}"></img>
+                <h2>Abdulqader Mohamed</h2>
+                <strong><p id="bio">FULL STACK WEB DEVELOPER</p></strong>
+                <a href="#projects" id="arrow-down-icon"><i class="fas fa-arrow-down"></i></a>
             </div>
         </div>
     </div>
 </section>
+<section id="projects">
+    <div class="projects-container">
+        <div id="project-one" class="project-card">
 
-<section id="contact-us">
-    <div class="container-fluid">
-        <div class="row">
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th>Some Data</th>
-                        <th>Some Data</th>
-                        <th>Some Data</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td scope="row">Some Data</td>
-                        <td>Some Data</td>
-                        <td>Some Data</td>
-                    </tr>
-                    <tr>
-                        <td scope="row">Some Data</td>
-                        <td>Some Data</td>
-                        <td>Some Data</td>
-                    </tr>
-                </tbody>
-            </table>
+        </div>
+        <div class="project-card">
+
+        </div>
+        <div class="project-card">
+
+        </div>
+        <div class="project-card">
+
         </div>
     </div>
 </section>
+<section id="contact-me">
+    Contact
+</section>
+
+
+
+<script src="{% static 'the_portfolio/scrolling-animation.js' %}"></script>
 {% endblock %}

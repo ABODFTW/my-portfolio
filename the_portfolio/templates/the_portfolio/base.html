@@ -6,44 +6,52 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
     <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css"
         integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" rel="stylesheet">
     <link href="{% static 'the_portfolio/sheet.css' %}" rel="stylesheet">
-    <link rel="icon" href="{% static 'the_portfolio/youtube.png' %}">
+    <link rel="icon" href="{% static 'the_portfolio/icon.png' %}">
     <title>
-        ABODXDGAMES PORTFOLIO
+        Abdulqader | Portfolio
     </title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">
-            ABOD | Portfolio
-        </a>
-        <button aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"
-            data-target="#navbarsExample09" data-toggle="collapse" type="button">
-            <span class="navbar-toggler-icon">
-            </span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarsExample09">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#projects">
-                        Projects
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact-us">
-                        Contact-us
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+
+    <header class="headroom">
+        <nav id="navigation" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <a class="navbar-brand" href="#home">
+                <img src="{% static 'the_portfolio/icon.png' %}" width="30" height="30" alt="icon">
+            </a>
+            <button aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"
+                data-target="#navbarsExample09" data-toggle="collapse" type="button">
+                <span class="navbar-toggler-icon">
+                </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarsExample09">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">
+                            Projects
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact-me">
+                            Contact me
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
     {% block body %}
     {% endblock %}
-    <script crossorigin="anonymous" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        src="https://code.jquery.com/jquery-3.3.1.slim.min.js">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
         </script>
     <script crossorigin="anonymous" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"

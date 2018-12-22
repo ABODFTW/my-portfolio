@@ -1,5 +1,26 @@
+/* 
+This Doc is orgnaized like this 
+
+1 - Html tags selectors styles 
+
+2 - Classes styles 
+
+3 - keyframes
+
+4 - Id's
+*/
 body{
-	color:#D3D4D9
+	color:#fff;
+}
+section{
+	min-height: 100vh;
+	padding-top: 10vh;
+	background-color: #db384e;
+}
+section:nth-child(odd){
+	min-height: 100vh;
+	padding-top: 10vh;
+	background-color: #ccc;
 }
 a:hover{
 	text-decoration: none;
@@ -7,21 +28,72 @@ a:hover{
 .c-black{
 	color:#252627;
 }
-
-#about-me{
-	min-height: 94vh;
-	padding: 5vh;
-	background-color: #db384e;
+.projects-container{
+	display: grid;
+	justify-items: center;
+	grid-row-gap: 1vh;
+	grid-column-gap: 1vw;
+	grid-template-columns: repeat(2,1fr);
+	grid-template-rows: repeat(2,1fr);
+}
+.project-card{
+	background-color:#ccc;
+	height: 40vh;
+	width: 45vw;
+}
+.project-card:hover{
+	background-color:#333;
+}
+@keyframes blink{
+	from{
+		color:rgba(255,255,255,1);
+	}
+	to{
+		color:rgba(255,255,255,0);
+	}
 }
 
+/*** Home Section ***/ 
+
+#personal-photo{
+	border: solid #fff 4px;
+}
+#arrow-down-icon{
+	font-size:30pt;
+	animation-name:blink;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
+#arrow-down-icon:hover{
+	color:rgb(255, 255, 255 ,1);
+	cursor: pointer;
+	animation-name: none;
+}
+#bio{
+	font-size: 18pt;
+}
+
+/*** Projects Section ***/
 #projects{
-	min-height: 100vh;
-	padding: 5vh;
-	background-color: #28587B;
-	text-align: center;
+	padding-bottom: 10vh;
 }
-#contact-us{
-	min-height: 100vh;
-	padding: 5vh;
-	background-color: #db384e;
-}
+
+
+
+/*** Media Queries ***/
+
+/* this is equals to sm */
+@media (max-width: 576px) { 
+	.projects-container{
+		justify-content: center;
+		grid-template-columns: 0;
+		grid-template-rows: repeat(4 , 1fr);
+	}
+	
+	.project-card{
+		background-color:#fff;
+		height: 40vh;
+		width: 90vw;
+	}
+ }
